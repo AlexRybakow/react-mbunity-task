@@ -1,0 +1,216 @@
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  padding: 20px 20px 35px 20px;
+
+  background-color: #000;
+
+  @media (min-width: 1040px)  {
+    padding: 80px 80px 66px 80px;
+  }
+
+  &__onDesktop {
+    @media (min-width: 1040px)  {
+      display: flex;
+
+      justify-content: space-between;
+    }
+  }
+
+  &__list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @media (min-width: 1040px)  {
+      flex-direction: row;
+      gap: 28px;
+    }
+  }
+
+  &__icon {
+    display: block;
+    height: 19px;
+    width: 19px;
+
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &-phone {
+      background-image: url(../../assets/phone.svg);
+    }
+
+    &-mail {
+      height: 16px;
+      width: 20px;
+      background-image: url(../../assets/mail.svg);
+    }
+
+    &-location {
+      height: 21px;
+      width: 16.5px;
+      background-image: url(../../assets/geo.svg);
+    }
+  }
+
+  &__logo {
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+
+    &__conatainer {
+      padding: 0 70px 20px 70px;
+
+      text-align: center;
+
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  &__item {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    border-bottom: 1px solid transparent;
+
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__group__container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: 1040px)  {
+      display: contents;
+    }
+  }
+
+  &__group__header {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+  }
+}
+
+.reach-us {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.newsletterForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+
+  background-color: #0D0D0D;
+
+  border-radius: 5px;
+
+  padding: 17px 14px 14px 14px;
+
+  @media (min-width: 1040px)  {
+    height: fit-content;
+  }
+
+
+  &__header {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+  }
+
+  &__input {
+    height: 40px;
+    width: 60%;
+
+    padding: 11px;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 4px 0 0 4px;
+    color: #fff;
+
+    background-color: #1A1A1A;
+    border: 2px solid transparent;
+
+    transition: border-color 0.3s ease-in-out;
+
+    &:focus {
+      border: 2px solid #000;
+    }
+  }
+
+  &__btn {
+    height: 40px;
+    width: 40%;
+    padding: 10px 20px;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    text-align: center;
+
+    background-color: #000;
+
+    border-radius: 0 4px 4px 0;
+
+    transition: transform 0.3s, border-radius 0.3s ease-in-out;
+
+    &:focus, &:hover {
+      border-radius: 5px;
+      transform: scale(1.05)
+    }
+  }
+
+  &__text {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+}

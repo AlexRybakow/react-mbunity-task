@@ -1,0 +1,180 @@
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40%;
+  padding: 15px 20px 25px;
+  background-color: #000;
+  border-radius: 5px;
+
+  @media (min-width: 1040px)  {
+    justify-content: space-between;
+    align-items: flex-start;
+    width: fit-content;
+    height: 100%;
+    padding: 40px;
+    border-radius: 10px;
+  }
+
+  &__header {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+
+    @media (min-width: 1040px)  {
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 42px;
+    }
+  }
+
+  &__item {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+
+    @media (min-width: 1040px)  {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  &__icon__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    width: 24px;
+
+    &-phone {
+      height: 19px;
+      width: 19px;
+      background-image: url(../../../assets/phone.svg);
+    }
+
+    &-mail {
+      width: 20px;
+      height: 16px;
+      background-image: url(../../../assets/mail.svg);
+    }
+
+    &-location {
+      width: 16.5px;
+      height: 21px;
+      background-image: url(../../../assets/geo.svg);
+    }
+  }
+
+  &__text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #c9c9c9;
+    margin-bottom: 13px;
+
+    @media (min-width: 1040px)  {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+
+    @media (min-width: 1040px)  {
+      align-items: flex-start;
+      gap: 50px;
+      margin-bottom: 0;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: transform 0.5s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      @media (min-width: 1040px)  {
+        flex-direction: row;
+        gap: 25px;
+      }
+    }
+  }
+
+  &__icons__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #262626;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #fff;
+    }
+
+    &:hover .contacts-container__icon--twitter {
+      background-image: url(../../../assets/TwitterBlack.svg);
+    }
+
+    &:hover .contacts-container__icon--instagram {
+      background-image: url(../../../assets/insta2.svg);
+    }
+
+    &:hover .contacts-container__icon--discord {
+      background-image: url(../../../assets/discord2.svg);
+    }
+
+    &__twitter {
+      height: 12px;
+      width: 15px;
+      transition: background-image 0.3s ease-in-out;
+      background-image: url(../../../assets/Twitter.svg);
+    }
+
+    &__instagram {
+      width: 15px;
+      height: 15px;
+      transition: background-image 0.3s ease-in-out;
+      background-image: url(../../../assets/insta.svg);
+    }
+
+    &__discord {
+      width: 15px;
+      height: 10px;
+      transition: background-image 0.3s ease-in-out;
+      background-image: url(../../../assets/discord1.svg);
+    }
+  }
+}
+  
